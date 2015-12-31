@@ -6,7 +6,7 @@ Existing standards:
 
 * [BetaNYC civic.json](https://github.com/BetaNYC/civic.json)
 * [Code for DC civic.json](http://codefordc.org/resources/specification.html)
-* [Code for America API](http://codeforamerica.org/api/#api-projects)
+* [Code for America API](http://codeforamerica.org/api/#project-properties)
 * [18F .about.yml](https://github.com/18F/about_yml)
 * [npm package.json](https://docs.npmjs.com/files/package.json)
 
