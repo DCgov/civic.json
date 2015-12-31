@@ -7,4 +7,6 @@ Existing standards:
 * [BetaNYC civic.json](https://github.com/BetaNYC/civic.json)
 * [Code for DC civic.json](http://codefordc.org/resources/specification.html)
 * [18F .about.yml](https://github.com/18F/about_yml)
+* [npm package.json](https://docs.npmjs.com/files/package.json)
+
 
