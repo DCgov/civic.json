@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "civic.json extended",
+  "type": "object",
+  "definitions": {
+    "participants": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Ideation",
+        "Alpha",
+        "Beta",
+        "Production",
+        "Archival"
+      ]
+    },
+    "thumbnailUrl": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/participants"
+      },
+      "uniqueItems": true
+    },
+    "organizations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/participants"
+      },
+      "uniqueItems": true
+    },
+    "geography": {
+      "type": "string"
+    },
+    "type": {
+      "type": "object"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "required": [
+      "conformsTo",
+      "contact",
+      "status"
+    ]
+  }
+}
