@@ -1,0 +1,46 @@
+{
+  "name": "civic.json extended",
+  "description": "An extension to civic.json to better support collaboration.",
+  "status": "Alpha",
+  "thumbnailUrl": "",
+  "contact": {
+      "name": "Emanuel Feld",
+      "email": "opensource@dc.gov",
+      "twitter": "",
+  },
+  "people": [
+    {
+      "name": "Emanuel Feld",
+      "email": "",
+      "github": "emanuelfeld",
+      "twitter": "evonfriedland",
+      "url": "",
+      "role": "lead"
+    },
+    {
+      "name": "Steven Reilly",
+      "email": "",
+      "github": "stvnrlly",
+      "twitter": "",
+      "url": "",
+      "role": "lead"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "OCTO Innovation Team",
+      "url": "",
+      "role": "lead"
+    },
+    {
+      "name": "Code for DC",
+      "url": "http://codefordc.org/",
+      "role": "lead"
+    }
+  ],
+  "geography": "",
+  "type": "",
+  "data": [],
+  "tags": ["documentation", "standard", "civic", "government"],
+  "links": []
+}
