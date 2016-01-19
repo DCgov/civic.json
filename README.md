@@ -1,4 +1,4 @@
-# civicgov.json
+# civic.json extended
 
 [![Join the chat at https://gitter.im/DCgov/civicgov.json](https://badges.gitter.im/DCgov/civicgov.json.svg)](https://gitter.im/DCgov/civicgov.json?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -11,5 +11,3 @@ Existing standards:
 * [Code for America API](http://codeforamerica.org/api/#project-properties)
 * [18F .about.yml](https://github.com/18F/about_yml)
 * [npm package.json](https://docs.npmjs.com/files/package.json)
-
-
