@@ -28,6 +28,10 @@
       "additionalProperties": false
     }
   },
+  "required": [
+    "contact",
+    "status"
+  ],
   "properties": {
     "name": {
       "type": "string"
@@ -87,7 +91,7 @@
       "type": "string"
     },
     "type": {
-      "type": "object"
+      "type": "string"
     },
     "data": {
       "type": "object",
@@ -113,11 +117,6 @@
         "type": "string"
       },
       "uniqueItems": true
-    },
-    "required": [
-      "conformsTo",
-      "contact",
-      "status"
-    ]
+    }
   }
 }
