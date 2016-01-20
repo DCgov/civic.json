@@ -46,3 +46,9 @@ body {
 #validate_result {
 	margin-top: 20px;
 }
+
+#status {
+	color: white;
+	background-color: red;
+	padding: 10px;
+}
