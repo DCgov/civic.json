@@ -4,9 +4,9 @@
   "status": "Alpha",
   "thumbnailUrl": "",
   "contact": {
-      "name": "Emanuel Feld",
-      "email": "opensource@dc.gov",
-      "twitter": "",
+    "name": "Emanuel Feld",
+    "email": "opensource@dc.gov",
+    "twitter": ""
   },
   "people": [
     {
@@ -40,7 +40,12 @@
   ],
   "geography": "",
   "type": "",
-  "data": [],
-  "tags": ["documentation", "standard", "civic", "government"],
+  "data": {},
+  "tags": [
+    "documentation",
+    "standard",
+    "civic",
+    "government"
+  ],
   "links": []
 }
