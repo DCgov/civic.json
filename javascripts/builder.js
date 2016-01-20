@@ -1,4 +1,4 @@
-$.getJSON("../assets/schema.json", function(json) {
+$.getJSON("./assets/schema.json", function(json) {
 $("#form").alpaca({
     "schema": json,
     "options": {

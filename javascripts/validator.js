@@ -1,4 +1,4 @@
-$.getJSON("../assets/schema.json", function(schema) {
+$.getJSON("./assets/schema.json", function(schema) {
     $("#validate").click(function() {
         try {
             var civic = JSON.parse($("#to_validate").val());
