@@ -3,14 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Civic.JSON</title>
-    <link href="index.css" rel="stylesheet">
+
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="tv4.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/validator.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/index.css" rel="stylesheet">
 </head>
 <body>
     <div id="container">
-        <div class="center-block text-center" id="instructions">
+        <div class="center-block text-center" id="header">
             <h1><a href="/index.html">civic.json</a></h1>
             <p>document your project for the betterment of humankind</p>
         </div>
@@ -22,27 +26,6 @@
         <div class="center-block text-center" id="validate_result"></div>
     </div>
     <script>
-    $.getJSON("schema.json", function(schema) {
-
-    $("#validate").click(function() {
-        try {
-            var civic = JSON.parse($("#to_validate").val());
-            var valid = tv4.validateMultiple(civic, schema);
-            console.log(valid);
-            if (valid.valid === true) {
-                $("#validate_result").text("Your civic.json is valid!");
-            } else {
-                $("#validate_result").text("Your civic.json has an error!");
-                var errors = valid.errors;
-                for (i = 0; i<valid.errors.length; i++) {
-                    $("#validate_result").append('<br>' + valid.errors[i].dataPath + ': ' + valid.errors[i].message);
-                }
-            }
-        } catch(err) {
-            $("#validate_result").text("Your civic.json has an error!");            
-        }
-    });
-});
     </script>
 </body>
 </html>

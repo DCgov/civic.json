@@ -3,36 +3,49 @@
 <head>
     <meta charset="utf-8">
     <title>Civic.JSON</title>
-    <link href="index.css" rel="stylesheet">
-    <link href=
-    "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel=
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel=
     "stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/index.css" rel="stylesheet">
 </head>
 <body>
     <div id="container">
-        <div class="center-block text-center" id="instructions">
+        <div class="center-block text-center" id="header">
             <h1><a href="/index.html">civic.json</a></h1>
             <p>document your project for the betterment of humankind</p>
         </div>
         <div class="center-block form" id="what">
             <h3>What is civic.json?</h3>
-            <p>Civic.json is a metadata file (and standard) that helps people learn more about your community-centric code projects!</p>
+            <p>Civic.json is a metadata file (and standard) that helps people learn about your community-centric code projects.</p>
             <p>By putting one in your project's GitHub repository, you can tell others what it's about, its status, which people and organizations are involved, and whom they can reach out to for more information.</p>
-            <p>Here's an example.</p>
+            <p>Think of it like a structured "README" file that makes possible things like <a href="http://codefordc.org/projects/">browseable project pages</a> for your organization or city.</p>
+            <p>Want to see an example? Here's <a href="#example">one for the civic.json specification</a>, itself!</p>
         </div>
         <div class="center-block form" id="how">
             <h3>How do I create one?</h3>
-            <p>The <a href="/builder.html">Builder Form</a> is the easiest way to start your civic.json file.</p>
-            <p>You can also use the <a href="/validator.html">Validation Tool</a> to check that your repository's civic.json file is correctly formatted.</p>
+            <p>The <a href="/builder.html">Civic.json Builder</a> is the easiest way to start your civic.json file.</p>
+            <p>With the <a href="/validator.html">Civic.json Validator</a> you can also check if an existing civic.json file is correctly formatted.</p>
         </div>
         <div class="center-block form" id="who">
             <h3>Who is behind this?</h3>
-            <p>Civic.json was originally created by Beta.NYC. We here in DC—members of the Code for DC brigade and employees of the DC Government—have extended their specification to make it easier for local governments and civic technologists collaborate on projects.</p>
+            <p>Civic.json was originally created by <a href="https://github.com/BetaNYC/civic.json">Beta.NYC</a> in 2014.</p>
+
+            <p>Now, a group of Washington, DC residents—<a href="http://codefordc.org/projects/">Code for DC</a> volunteers and employees of the <a href="https://github.com/DCgov">District Government</a>—have extended their specification to make it useful for a broader user base.</p>
+
+            <p>In doing so, we aim to foster collaboration and reuse across government agencies, municipalities, and the citizen-government divide.</p>
         </div>
         <div class="center-block form" id="contributing">
             <h3>How can I contribute?</h3>
             <p>
             </p>
+        </div>
+        <div class="center-block form" id="example">
+            <h3>Example civic.json</h3>
+            <pre id="example_json"></pre>
         </div>
     </div>
 </body>
