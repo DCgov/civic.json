@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://open.dc.gov/civic.json/assets/schema.json",
+  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json",
   "type": "object",
   "required": [
     "status",
@@ -9,18 +9,6 @@
   "properties": {
     "name": {
       "title": "Name",
-      "type": "string"
-    },
-    "description": {
-      "title": "Description",
-      "type": "string"
-    },
-    "type": {
-      "title": "Type",
-      "type": "string"
-    },
-    "license": {
-      "title": "License",
       "type": "string"
     },
     "status": {
@@ -34,26 +22,6 @@
         "Production",
         "Archival"
       ]
-    },
-    "homepage": {
-      "title": "Homepage URL",
-      "type": "string"
-    },
-    "thumbnail": {
-      "title": "Thumbnail URL",
-      "type": "string"
-    },
-    "repository": {
-      "title": "Repository",
-      "type": "string"
-    },
-    "geography": {
-      "title": "Geographic Tags",
-      "type": "array",
-      "items": {
-        "title": "Tag",
-        "type": "string"
-      }
     },
     "contact": {
       "required": [
@@ -75,8 +43,39 @@
           "title": "URL",
           "type": "string"
         }
-      },
-      "additionalProperties": false
+      }
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "type": {
+      "title": "Type",
+      "type": "string"
+    },
+    "license": {
+      "title": "License",
+      "type": "string"
+    },
+    "homepage": {
+      "title": "Homepage URL",
+      "type": "string"
+    },
+    "thumbnail": {
+      "title": "Thumbnail URL",
+      "type": "string"
+    },
+    "repository": {
+      "title": "Repository",
+      "type": "string"
+    },
+    "geography": {
+      "title": "Geographic Tags",
+      "type": "array",
+      "items": {
+        "title": "Tag",
+        "type": "string"
+      }
     },
     "data": {
       "title": "Data",
@@ -93,7 +92,7 @@
             "type": "string"
           },
           "url": {
-            "title": "URL",
+            "title": "Direct URL",
             "type": "string"
           },
           "metadata": {
@@ -125,7 +124,7 @@
     "id": {
       "title": "Schema URL",
       "type": "string",
-      "default": "http://open.dc.gov/civic.json/assets/schema.json"
+      "default": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
     }
   }
 }
