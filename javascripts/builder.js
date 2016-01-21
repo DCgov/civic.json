@@ -1,4 +1,4 @@
-$.getJSON("./assets/schema.json", function(json) {
+$.getJSON("https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json", function(json) {
 $("#form").alpaca({
     "schema": json,
     "options": {
