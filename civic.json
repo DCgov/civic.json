@@ -2,6 +2,7 @@
   "name": "civic.json extended",
   "description": "An extension to civic.json to better support collaboration.",
   "status": "Alpha",
+  "id": "http://open.dc.gov/civic.json/assets/schema.json",
   "thumbnailUrl": "",
   "contact": {
     "name": "Emanuel Feld",
