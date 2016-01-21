@@ -1,44 +1,26 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://open.dc.gov/civic.json/assets/schema.json",
   "type": "object",
-  "definitions": {
-    "participants": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "title": "Name",
-          "type": "string"
-        },
-        "email": {
-          "title": "Email",
-          "type": "string"
-        },
-        "github": {
-          "title": "Github Username",
-          "type": "string"
-        },
-        "twitter": {
-          "title": "Twitter Username",
-          "type": "string"
-        },
-        "url": {
-          "title": "URL",
-          "type": "string"
-        },
-        "role": {
-          "title": "Role",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    }
-  },
   "required": [
-    "status", "name"
+    "status",
+    "name"
   ],
   "properties": {
     "name": {
       "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "type": {
+      "title": "Type",
+      "type": "string"
+    },
+    "license": {
+      "title": "License",
       "type": "string"
     },
     "status": {
@@ -53,24 +35,30 @@
         "Archival"
       ]
     },
-    "description": {
-      "title": "Description",
+    "homepage": {
+      "title": "Homepage URL",
       "type": "string"
     },
-    "thumbnailUrl": {
+    "thumbnail": {
       "title": "Thumbnail URL",
       "type": "string"
     },
-    "geography": {
-      "title": "Geography",
+    "repository": {
+      "title": "Repository",
       "type": "string"
     },
-    "type": {
-      "title": "Type",
-      "type": "string"
+    "geography": {
+      "title": "Geographic Tags",
+      "type": "array",
+      "items": {
+        "title": "Tag",
+        "type": "string"
+      }
     },
     "contact": {
-      "required": ["name"],
+      "required": [
+        "name"
+      ],
       "title": "Contact",
       "type": "object",
       "properties": {
@@ -83,14 +71,6 @@
           "title": "Email",
           "type": "string"
         },
-        "github": {
-          "title": "GitHub Username",
-          "type": "string"
-        },
-        "twitter": {
-          "title": "Twitter Username",
-          "type": "string"
-        },
         "url": {
           "title": "URL",
           "type": "string"
@@ -98,46 +78,37 @@
       },
       "additionalProperties": false
     },
-    "people": {
-      "title": "People",
-      "type": "array",
-      "items": {
-        "title": "Person",
-        "$ref": "#/definitions/participants"
-      },
-      "uniqueItems": true
-    },
-    "organizations": {
-      "title": "Organizations",
-      "type": "array",
-      "items": {
-        "title": "Organization",
-        "$ref": "#/definitions/participants"
-      },
-      "uniqueItems": true
-    },
     "data": {
       "title": "Data",
       "type": "array",
       "items": {
+        "required": [
+          "name",
+          "url"
+        ],
         "type": "object",
         "properties": {
-        "name": {
-          "title": "Name",
-          "type": "string"
-        },
-        "url": {
-          "title": "URL",
-          "type": "string"
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "url": {
+            "title": "URL",
+            "type": "string"
+          },
+          "metadata": {
+            "title": "Metadata URL",
+            "type": "string"
+          }
         }
-      }
-    }
+      },
+      "uniqueItems": true
     },
-    "tags": {
-      "title": "Tags",
+    "keywords": {
+      "title": "Keywords",
       "type": "array",
       "items": {
-        "title": "Tag",
+        "title": "Keyword",
         "type": "string"
       },
       "uniqueItems": true
@@ -150,6 +121,11 @@
         "type": "string"
       },
       "uniqueItems": true
+    },
+    "id": {
+      "title": "Schema URL",
+      "type": "string",
+      "default": "http://open.dc.gov/civic.json/assets/schema.json"
     }
   }
 }
