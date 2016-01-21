@@ -34,8 +34,7 @@
     }
   },
   "required": [
-    "status",
-    "name"
+    "status", "name"
   ],
   "properties": {
     "name": {
@@ -71,15 +70,14 @@
       "type": "string"
     },
     "contact": {
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "title": "Contact",
       "type": "object",
       "properties": {
         "name": {
           "title": "Name",
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "email": {
           "title": "Email",
@@ -124,16 +122,16 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": {
-            "title": "Name",
-            "type": "string"
-          },
-          "url": {
-            "title": "URL",
-            "type": "string"
-          }
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "URL",
+          "type": "string"
         }
       }
+    }
     },
     "tags": {
       "title": "Tags",
