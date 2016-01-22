@@ -49,6 +49,9 @@
       "title": "Partners",
       "type": "array",
       "items": {
+        "required": [
+          "name"
+        ],
         "title": "Partner",
         "type": "object",
         "properties": {
