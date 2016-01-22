@@ -10,6 +10,16 @@
     "name": "Emanuel Feld",
     "email": "opensource@dc.gov"
   },
+  "partners": [
+    {
+      "name": "OCTO Innovation Team",
+      "email": "opensource@dc.gov"
+    },
+    {
+      "name": "Code for DC",
+      "url": "https://twitter.com/CodeforDC"
+    }
+  ],
   "data": [],
   "keywords": [
     "documentation",
