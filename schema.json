@@ -45,6 +45,28 @@
         }
       }
     },
+    "partners": {
+      "title": "Partners",
+      "type": "array",
+      "items": {
+        "title": "Partner",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "title": "Email",
+            "type": "string"
+          },
+          "url": {
+            "title": "URL",
+            "type": "string"
+          }
+        }
+      }
+    },
     "description": {
       "title": "Description",
       "type": "string"
