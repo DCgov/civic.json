@@ -1,51 +1,39 @@
 {
   "name": "civic.json extended",
   "description": "An extension to civic.json to better support collaboration.",
+  "license": "https://raw.githubusercontent.com/DCgov/civic.json/master/LICENSE.md",
   "status": "Alpha",
-  "thumbnailUrl": "",
+  "homepage": "http://open.dc.gov/civic.json",
+  "repository": "https://github.com/DCgov/civic.json",
+  "geography": [],
   "contact": {
     "name": "Emanuel Feld",
-    "email": "opensource@dc.gov",
-    "twitter": ""
+    "email": "opensource@dc.gov"
   },
-  "people": [
-    {
-      "name": "Emanuel Feld",
-      "email": "",
-      "github": "emanuelfeld",
-      "twitter": "evonfriedland",
-      "url": "",
-      "role": "lead"
-    },
-    {
-      "name": "Steven Reilly",
-      "email": "",
-      "github": "stvnrlly",
-      "twitter": "",
-      "url": "",
-      "role": "lead"
-    }
-  ],
-  "organizations": [
+  "partners": [
     {
       "name": "OCTO Innovation Team",
-      "url": "",
-      "role": "lead"
+      "email": "opensource@dc.gov"
     },
     {
       "name": "Code for DC",
-      "url": "http://codefordc.org/",
-      "role": "lead"
+      "url": "https://twitter.com/CodeforDC"
     }
   ],
-  "geography": "",
-  "type": "",
   "data": [],
-  "tags": [
+  "keywords": [
     "documentation",
+    "schema",
     "standard",
     "civic",
-    "government"
+    "government",
+    "OCTO",
+    "DC",
+    "Code for DC",
+    "Washington"
   ],
-  "links": []
+  "links": [
+    ""
+  ],
+  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
 }
