@@ -1,54 +1,65 @@
 body {
-	margin:0 auto;
-	padding-bottom: 40px;
-    font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #container {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 .form {
-	width: 70%; 
+    width: 70%;
 }
 
 #header {
-	border-bottom: solid 5px green;
+	border-bottom: 5px solid green;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
 }
 
 .alpaca-form-button-submit {
-	width: 100%;
+    width: 100%;
 }
 
 #validate {
-	width: 100%;
+    width: 100%;
 }
 
 #results {
-	height: 200px;
-	border: 2px black solid;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    height: 200px;
+    border: 2px #000 solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #download {
-	margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 #to_validate {
-	width:100%;
-	height: 300px;
+    width: 100%;
+    height: 300px;
 }
 
 #validate_result {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 #status {
-	color: white;
-	background-color: red;
-	padding: 10px;
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+}
+
+.menu {
+    background-color: green;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.menu > a {
+    margin: 0 10px;
+    color: #fff;
 }

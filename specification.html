@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Civic.JSON (Extended)</title>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel=
+    "stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="center-block text-center" id="header">
+            <div class="menu">
+                <a href=".">about</a>
+                <a href="./specification.html">specification</a>
+                <a href="./builder.html">builder</a>
+                <a href="./validator.html">validator</a>
+            </div>
+            <h1><a href=".">civic.json</a></h1>
+            <h4>extended</h4>
+            <p>document your project for the betterment of humankind</p>
+        </div>
+        <div class="center-block form" id="language">
+            <h2>Language</h2>
+            <p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+            <hr>
+        </div>
+        <div class="center-block form" id="specification">
+            <h2>Specification</h2>
+            <h3>File location and contents</h3>
+            <ol>
+                <li><code>civic.json</code> MUST reside in the root directory of a project's repository.</li>
+                <li><code>civic.json</code> MUST include a single object represented as JSON, with key-value pairs according to the list below.</li>
+            </ol>
+            <h3>Fields</h3>
+            <h4>Required</h4>
+            <p>The following fields MUST be included:</p>
+            <ol>
+                <li><code>name</code> - a string specifying the project's name.</li>
+                <li><code>status</code> - a string indicating the status of the project. The value MUST be one of:</li>
+                <ol>
+                    <li><code>"Ideation"</code> - brainstorming phase.</li>
+                    <li><code>"Alpha"</code> - initial prototyping phase and internal testing.</li>
+                    <li><code>"Beta"</code> - a product is being tested in public.</li>
+                    <li><code>"Production"</code> - finished Product, with development and maintenance ongoing.</li>
+                    <li><code>"Archival"</code> - finished Product, but no longer actively maintained.</li>
+                </ol>
+            </ol>
+            <h4>Strongly recommended</h4>
+            <p>In addition to the above fields, the following fields SHOULD be included in every civic.json, where applicable:</p>
+            <ol>
+                <li><code>contact</code> - an object providing the individual or group fielding questions about the project. The object structure MUST contain a <code>name</code> property and SHOULD contain an <code>email</code> and/or <code>url</code> property.</li>
+                <li><code>description</code> - a description of the project usable as a summary.</li>
+                <li><code>homepage</code> - the project's URL, if it is a website, or the URL of a site describing the project.</li>
+                <li><code>id</code> - the URL describing the schema of the civic.json file.</li>
+                <li><code>license</code> - a field specifying the license under which the project is provided. <strong>This property is not legally binding and does not guarantee that the project is licensed under the terms defined in this property.</strong> The value of the propery SHOULD be a current <a href="https://spdx.org/licenses/">SPDX license identifier</a> for the license you're using—preferably one that is <a href="https://opensource.org/licenses/alphabetical">OSI approved</a>. Alternatively, you MAY provide the url to a license file.</li>
+                <li><code>repository</code> - the project's public repository URL.</li>
+            </ol>
+            <h4>Recommended</h4>
+            <p>The following are commonly used fields that your civic.json MAY contain:</p>
+            <ol>
+                <li><code>data</code> - an array of data objects, describing the data sources used in the project. Each data object MUST include <code>name</code> and <code>url</code> properties, giving the dataset's name and download URL, respectively. Each data object SHOULD also include a <code>metadata</code> property, providing the URL where the dataset's metadata can be read.</li>
+                <li><code>geography</code> - an array of geography strings, indicating the city, state, county, or other geographic entity the project is relevant to.</li>
+                <li><code>keywords</code> - an array of keyword strings to help people search for your project.</li>
+                <li><code>links</code> - an array of link strings, giving any additional webpage URLs relevant to your project.</li>
+                <li><code>partners</code> - an array of partner objects, describing the primary individuals or groups that contributing to the project. Each partner object MUST contain a <code>name</code> property and SHOULD contain an <code>email</code> and/or <code>url</code> property.</li>
+                <li><code>thumbnail</code> - the URL of an image file (e.g. logo or screenshot) to be used in a project listing.</li>
+                <li><code>type</code> - a string describing the type of project.</li>
+            </ol>
+            <h4>Other</h4>
+            <p>You MAY include other fields not listed above.</p>
+        </div>
+    </div>
+</body>
+</html>
