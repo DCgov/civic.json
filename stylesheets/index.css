@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
 body {
     margin: 0 auto;
     padding-bottom: 40px;
-    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+	padding-bottom: 5px;
 }
 
 #container {
@@ -11,14 +18,18 @@ body {
 
 .form {
     width: 70%;
+    padding-bottom: 10px;
 }
 
 #header {
-	border-bottom: 5px solid green;
+	border-bottom: 5px solid #007300;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
 }
 
+.header_text {
+	width: 95%;
+}
 .alpaca-form-button-submit {
     width: 100%;
 }
@@ -54,12 +65,29 @@ body {
 }
 
 .menu {
-    background-color: green;
+    background-color: #125588;
     padding: 10px 0;
     margin-bottom: 20px;
+    border-bottom: 5px solid #007300;
 }
 
-.menu > a {
+.header_text > a {
     margin: 0 10px;
     color: #fff;
+}
+
+
+.ribbon{
+  width: 150px;
+  background: #AB1F1F;
+  position: fixed;
+  top: 300px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #fff;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
