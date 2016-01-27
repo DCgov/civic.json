@@ -2,7 +2,7 @@
   "name": "civic.json extended",
   "description": "An extension to civic.json to better support collaboration.",
   "license": "https://raw.githubusercontent.com/DCgov/civic.json/master/LICENSE.md",
-  "status": "Alpha",
+  "status": "Beta",
   "homepage": "http://open.dc.gov/civic.json",
   "repository": "https://github.com/DCgov/civic.json",
   "geography": [],
