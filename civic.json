@@ -1,6 +1,6 @@
 {
-  "name": "civic.json extended",
-  "description": "An extension to civic.json to better support collaboration.",
+  "name": "civic.json (extended)",
+  "description": "An extension to civic.json to better support collaboration across government agencies and municipalities, and with the public.",
   "license": "https://raw.githubusercontent.com/DCgov/civic.json/master/LICENSE.md",
   "status": "Beta",
   "homepage": "http://open.dc.gov/civic.json",
@@ -12,7 +12,7 @@
   },
   "partners": [
     {
-      "name": "OCTO Innovation Team",
+      "name": "DC Technology Innovation Program",
       "email": "opensource@dc.gov"
     },
     {
@@ -32,8 +32,6 @@
     "Code for DC",
     "Washington"
   ],
-  "links": [
-    ""
-  ],
+  "links": [],
   "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
 }
