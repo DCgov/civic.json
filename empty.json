@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "description": "",
+  "license": "",
+  "status": "",
+  "homepage": "",
+  "repository": "",
+  "thumbnail": "",
+  "geography": [],
+  "contact": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "partners": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "data": [
+    {
+      "name": "",
+      "url": "",
+      "metadata": ""
+    }
+  ],
+  "keywords": [],
+  "links": [],
+  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
+}
