@@ -93,27 +93,27 @@
     },
     "license": {
       "title": "license",
-      "description": "",
+      "description": "Project license identifier",
       "type": "string"
     },
     "homepage": {
       "title": "homepage URL",
-      "description": "",
+      "description": "Project homepage URL",
       "type": "string"
     },
     "thumbnail": {
       "title": "thumbnail URL",
-      "description": "",
+      "description": "Project thumbnail image URL",
       "type": "string"
     },
     "repository": {
-      "title": "repository",
-      "description": "",
+      "title": "repository URL",
+      "description": "Project repository URL",
       "type": "string"
     },
     "geography": {
       "title": "geographic tags",
-      "description": "",
+      "description": "Project geographic/location tags",
       "type": "array",
       "items": {
         "title": "tag",
