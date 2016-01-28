@@ -8,11 +8,14 @@
   ],
   "properties": {
     "name": {
-      "title": "Name",
-      "type": "string"
+      "title": "name",
+      "description": "Project name",
+      "type": "string",
+      "minLength": 1
     },
     "status": {
-      "title": "Status",
+      "title": "status",
+      "description": "Project status",
       "type": "string",
       "default": "Alpha",
       "enum": [
@@ -27,83 +30,99 @@
       "required": [
         "name"
       ],
-      "title": "Contact",
+      "title": "contact",
       "type": "object",
       "properties": {
         "name": {
-          "title": "Name",
+          "title": "name",
+          "description": "Contact name",
           "type": "string",
           "minLength": 1
         },
         "email": {
-          "title": "Email",
+          "title": "email",
+          "description": "Contact email",
           "type": "string"
         },
         "url": {
           "title": "URL",
+          "description": "Contact URL",
           "type": "string"
         }
       }
     },
     "partners": {
-      "title": "Partners",
+      "title": "partners",
+      "description": "Project partners",
       "type": "array",
       "items": {
         "required": [
           "name"
         ],
-        "title": "Partner",
+        "title": "partner",
         "type": "object",
         "properties": {
           "name": {
-            "title": "Name",
-            "type": "string"
+            "title": "name",
+            "description": "Partner name",
+            "type": "string",
+            "minLength": 1
           },
           "email": {
-            "title": "Email",
+            "title": "email",
+            "description": "Partner email",
             "type": "string"
           },
           "url": {
             "title": "URL",
+            "description": "Partner URL",
             "type": "string"
           }
         }
       }
     },
     "description": {
-      "title": "Description",
+      "title": "description",
+      "description": "Project description",
       "type": "string"
     },
     "type": {
-      "title": "Type",
+      "title": "type",
+      "description": "Project type",
       "type": "string"
     },
     "license": {
-      "title": "License",
+      "title": "license",
+      "description": "",
       "type": "string"
     },
     "homepage": {
-      "title": "Homepage URL",
+      "title": "homepage URL",
+      "description": "",
       "type": "string"
     },
     "thumbnail": {
-      "title": "Thumbnail URL",
+      "title": "thumbnail URL",
+      "description": "",
       "type": "string"
     },
     "repository": {
-      "title": "Repository",
+      "title": "repository",
+      "description": "",
       "type": "string"
     },
     "geography": {
-      "title": "Geographic Tags",
+      "title": "geographic tags",
+      "description": "",
       "type": "array",
       "items": {
-        "title": "Tag",
+        "title": "tag",
         "type": "string"
       }
     },
     "data": {
-      "title": "Data",
+      "title": "data",
+      "description": "Data sets used in project",
       "type": "array",
       "items": {
         "required": [
@@ -113,15 +132,18 @@
         "type": "object",
         "properties": {
           "name": {
-            "title": "Name",
+            "title": "name",
+            "description": "Data set name",
             "type": "string"
           },
           "url": {
-            "title": "Direct URL",
+            "title": "direct URL",
+            "description": "Data set URL",
             "type": "string"
           },
           "metadata": {
-            "title": "Metadata URL",
+            "title": "metadata URL",
+            "description": "Data set metadata URL",
             "type": "string"
           }
         }
@@ -129,16 +151,18 @@
       "uniqueItems": true
     },
     "keywords": {
-      "title": "Keywords",
+      "title": "keywords",
+      "description": "Project keywords",
       "type": "array",
       "items": {
-        "title": "Keyword",
+        "title": "keyword",
         "type": "string"
       },
       "uniqueItems": true
     },
     "links": {
-      "title": "Links",
+      "title": "links",
+      "description": "Project links",
       "type": "array",
       "items": {
         "title": "URL",
@@ -147,7 +171,8 @@
       "uniqueItems": true
     },
     "id": {
-      "title": "Schema URL",
+      "title": "schema URL",
+      "description": "Civic.json schema URL",
       "type": "string",
       "default": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
     }
