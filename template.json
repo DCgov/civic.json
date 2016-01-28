@@ -1,0 +1,38 @@
+{
+    "name": "[required] project name", 
+    "description": "project description", 
+    "license": "project license", 
+    "status": "[required] project status (Ideation, Alpha, Beta, Production, or Archival)", 
+    "homepage": "project homepage", 
+    "repository": "project repository URL", 
+    "thumbnail": "project thumbnail image URL", 
+    "geography": [
+        "array of geography tags"
+    ], 
+    "contact": {
+        "name": "contact name [required]", 
+        "email": "contact email", 
+        "url": "contact URL"
+    }, 
+    "partners": [
+        {
+            "name": "[required if have partner] partner name", 
+            "email": "partner email", 
+            "url": "partner URL"
+        }
+    ], 
+    "data": [
+        {
+            "name": "[required if have dataset] dataset name", 
+            "url": "[required if have dataset] dataset URL", 
+            "metadata": "dataset metadata URL"
+        }
+    ], 
+    "keywords": [
+        "array of project keywords"
+    ], 
+    "links": [
+        "array of project links"
+    ], 
+    "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
+}
