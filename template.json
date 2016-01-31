@@ -5,6 +5,7 @@
     "status": "[required] project status (Ideation, Alpha, Beta, Production, or Archival)", 
     "homepage": "project homepage", 
     "repository": "project repository URL", 
+    "type": "project type (e.g. Web App, Dataset, Command Line Tool, etc.)", 
     "thumbnail": "project thumbnail image URL", 
     "geography": [
         "array of geography tags"
