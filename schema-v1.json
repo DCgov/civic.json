@@ -1,10 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json",
+  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema-v1.json",
   "type": "object",
   "required": [
     "status",
-    "name"
+    "name",
+    "tags"
   ],
   "properties": {
     "name": {
@@ -150,12 +151,12 @@
       },
       "uniqueItems": true
     },
-    "keywords": {
-      "title": "keywords",
-      "description": "Project keywords",
+    "tags": {
+      "title": "tags",
+      "description": "Project tags",
       "type": "array",
       "items": {
-        "title": "keyword",
+        "title": "tag",
         "type": "string"
       },
       "uniqueItems": true
@@ -174,7 +175,7 @@
       "title": "schema URL",
       "description": "Civic.json schema URL",
       "type": "string",
-      "default": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json"
+      "default": "https://raw.githubusercontent.com/DCgov/civic.json/master/schema-v1.json"
     }
   }
 }
