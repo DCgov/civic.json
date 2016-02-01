@@ -47,6 +47,7 @@
                     <li><code>"Production"</code> - finished Product, with development and maintenance ongoing.</li>
                     <li><code>"Archival"</code> - finished Product, but no longer actively maintained.</li>
                 </ol>
+                <li><code>tags</code> - an array of tag strings to help people search for your project, which SHOULD have at least one item.</li>
             </ol>
             <h4>Strongly recommended</h4>
             <p>In addition to the above fields, the following fields SHOULD be included in every civic.json, where applicable:</p>
@@ -63,7 +64,6 @@
             <ol>
                 <li><code>data</code> - an array of data objects, describing the data sources used in the project. Each data object MUST include <code>name</code> and <code>url</code> properties, giving the dataset's name and download URL, respectively. Each data object SHOULD also include a <code>metadata</code> property, providing the URL where the dataset's metadata can be read.</li>
                 <li><code>geography</code> - an array of geography strings, indicating the city, state, county, or other geographic entity the project is relevant to.</li>
-                <li><code>keywords</code> - an array of keyword strings to help people search for your project.</li>
                 <li><code>links</code> - an array of link strings, giving any additional webpage URLs relevant to your project.</li>
                 <li><code>partners</code> - an array of partner objects, describing the primary individuals or groups that contributing to the project. Each partner object MUST contain a <code>name</code> property and SHOULD contain an <code>email</code> and/or <code>url</code> property.</li>
                 <li><code>thumbnail</code> - the URL of an image file (e.g. logo or screenshot) to be used in a project listing.</li>

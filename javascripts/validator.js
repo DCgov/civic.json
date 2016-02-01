@@ -1,4 +1,4 @@
-$.getJSON("https://raw.githubusercontent.com/DCgov/civic.json/master/schema.json", function(schema) {
+$.getJSON("https://raw.githubusercontent.com/DCgov/civic.json/master/schema-v1.json", function(schema) {
     $("#validate").click(function() {
         try {
             var civic = JSON.parse($("#to_validate").val());
