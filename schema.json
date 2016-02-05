@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json",
+  "type": "object",
+  "required": [
+    "status",
+    "name",
+    "tags"
+  ],
+  "properties": {
+    "name": {
+      "title": "name",
+      "description": "Project name",
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "title": "status",
+      "description": "Project status",
+      "type": "string",
+      "default": "Alpha",
+      "enum": [
+        "Ideation",
+        "Alpha",
+        "Beta",
+        "Production",
+        "Archival"
+      ]
+    },
+    "contact": {
+      "required": [
+        "name"
+      ],
+      "title": "contact",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "name",
+          "description": "Contact name",
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "title": "email",
+          "description": "Contact email",
+          "type": "string"
+        },
+        "url": {
+          "title": "URL",
+          "description": "Contact URL",
+          "type": "string"
+        }
+      }
+    },
+    "partners": {
+      "title": "partners",
+      "description": "Project partners",
+      "type": "array",
+      "items": {
+        "required": [
+          "name"
+        ],
+        "title": "partner",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "name",
+            "description": "Partner name",
+            "type": "string",
+            "minLength": 1
+          },
+          "email": {
+            "title": "email",
+            "description": "Partner email",
+            "type": "string"
+          },
+          "url": {
+            "title": "URL",
+            "description": "Partner URL",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "description": {
+      "title": "description",
+      "description": "Project description",
+      "type": "string"
+    },
+    "type": {
+      "title": "type",
+      "description": "Project type",
+      "type": "string"
+    },
+    "license": {
+      "title": "license",
+      "description": "Project license identifier",
+      "type": "string"
+    },
+    "homepage": {
+      "title": "homepage URL",
+      "description": "Project homepage URL",
+      "type": "string"
+    },
+    "thumbnail": {
+      "title": "thumbnail URL",
+      "description": "Project thumbnail image URL",
+      "type": "string"
+    },
+    "repository": {
+      "title": "repository URL",
+      "description": "Project repository URL",
+      "type": "string"
+    },
+    "geography": {
+      "title": "geographic tags",
+      "description": "Project geographic/location tags",
+      "type": "array",
+      "items": {
+        "title": "tag",
+        "type": "string"
+      }
+    },
+    "data": {
+      "title": "data",
+      "description": "Data sets used in project",
+      "type": "array",
+      "items": {
+        "required": [
+          "name",
+          "url"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "name",
+            "description": "Data set name",
+            "type": "string"
+          },
+          "url": {
+            "title": "direct URL",
+            "description": "Data set URL",
+            "type": "string"
+          },
+          "metadata": {
+            "title": "metadata URL",
+            "description": "Data set metadata URL",
+            "type": "string"
+          }
+        }
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "title": "tags",
+      "description": "Project tags",
+      "type": "array",
+      "items": {
+        "title": "tag",
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "links": {
+      "title": "links",
+      "description": "Project links",
+      "type": "array",
+      "items": {
+        "title": "URL",
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "id": {
+      "title": "schema URL",
+      "description": "Civic.json schema URL",
+      "type": "string",
+      "default": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json"
+    }
+  }
+}
