@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Civic.JSON (Extended)</title>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel=
+    "stylesheet" type="text/css">
+    <link href="stylesheets/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ribbon">beta</div>
+    <div id="container">
+        <div class="center-block text-center" id="header">
+            <div class="menu">
+                <div class="header_text"><a href=".">about</a><a href="./specification.html">specification</a><a href="./builder.html">builder</a><a href="./validator.html">validator</a>
+            </div></div>
+            <div class="header_text"><h1><a href=".">civic.json</a></h1>
+            <h4>(extended)</h4>
+            <p>document your project for the betterment of humankind</p></div>
+        </div>
+        <div class="center-block form" id="what">
+            <h2>What is civic.json?</h2>
+            <p>So you've coded up a super awesome tool for your community. Now what? You want to share it, of course!</p>
+            <p>Well, civic.json is here to help.</p>
+            <p>It's a small file you put in the base of your project's public repository. Fill it with information explaining what your project's about, its development status, who helped build it, and where people can learn more.</p>
+            <p>Think of it like a structured "README" file that makes possible things like <a href="http://codefordc.org/projects/">browseable project pages</a> for your organization or city.</p>
+            <p>Want to see an example? Here's <a href="#example">one for the civic.json specification</a>, itself!</p>
+        </div>
+        <div class="center-block form" id="how">
+            <h2>OK, how do I create one?</h2>
+            <h4>On this site</h4>
+            <ol>
+                <li><a href="./builder.html">Build it</a> with the civic.json web form</li>
+                <li><a href="./validator.html">Validate</a> an existing civic.json file by pasting its contents on this page</li>
+            </ol>
+            <h4>From the terminal</h4>
+            <ol>
+                <li><a href="https://github.com/DCgov/civic.json-cli/blob/master/README.rst">Install</a> the civic.json command line interface with <code>pip install civicjson</code></li>
+                <li>Initialize a civic.json file with <code>civicjson init</code></li>
+                <li>Edit the template to fit your project</li>
+                <li>Validate it with <code>civicjson validate</code></li>
+            </ol>
+            <p>Whichever your preference, the <a href="./specification.html">schema specification</a> gives more detail about the information that goes into a civic.json file.</p>
+        </div>
+        <div class="center-block form" id="who">
+            <h2>Who is behind this?</h2>
+            <p>Civic.json was originally created by <a href="https://github.com/BetaNYC/civic.json">BetaNYC</a> in 2014.</p>
+            <p>Now, a group of Washington, DC residents—<a href="http://codefordc.org/projects/">Code for DC</a> volunteers and employees of the <a href="https://github.com/DCgov">District Government</a>—have extended their specification to make it useful for a broader user base.</p>
+            <p>In doing so, we aim to foster collaboration and reuse across government agencies, municipalities, and the citizen-government divide.</p>
+        </div>
+        <div class="center-block form" id="contributing">
+            <h2>How can I contribute?</h2>
+            <p>The civic.json (extended) schema <a href="https://github.com/dcgov/civic.json/tree/master">lives here</a> and this website's source can be <a href="https://github.com/dcgov/civic.json/tree/gh-pages">found here</a>. Both are available under a CC0 1.0 Universal <a href="https://github.com/DCgov/civic.json/blob/master/LICENSE.md">license</a>.</p>
+            <p>Found a bug? Think something could be explained better? Want to propose a modification to the schema? Open up an issue or send us an email at <a href="mailto:opensource@dc.gov">opensource@dc.gov</a>.</p>
+            <hr>
+        </div>
+        <div class="center-block form" id="example">
+            <h2>Example civic.json</h2>
+            <pre id="example_json"></pre>
+        </div>
+    </div>
+</body>
+</html>
