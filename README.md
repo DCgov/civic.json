@@ -7,7 +7,7 @@ We are looking to develop a project metadata standard for DCgov (and beyond) bas
 Existing standards:
 
 * [BetaNYC civic.json](https://github.com/BetaNYC/civic.json)
-* [Code for DC civic.json](http://codefordc.org/resources/specification.html)
+* [Code for DC civic.json](http://open.dc.gov/civic.json/)
 * [Code for America API](http://codeforamerica.org/api/#project-properties)
 * [18F .about.yml](https://github.com/18F/about_yml)
 * [npm package.json](https://docs.npmjs.com/files/package.json)
